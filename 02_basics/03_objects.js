@@ -1,4 +1,5 @@
-//singleton
+//singleton 
+const myObj = new Object() // this is a singleton object
 
 //object literal
 
