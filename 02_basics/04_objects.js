@@ -53,4 +53,18 @@ const users = [
 // console.log(Object.values(tinderUser)) // returns array of values
 // console.log(Object.entries(tinderUser)) // returns [key, value] array of array
 
-console.log(tinderUser.hasOwnProperty("nameOf"))
+// console.log(tinderUser.hasOwnProperty("nameOf"))
+
+//************************************** destructing ********************************************
+
+
+const course = {
+    courseName: "js in hindi", 
+    price: 999,
+    courseInstructor: "hitesh"
+}
+
+// course.courseInstructor
+
+const {courseInstructor: instructor} = course
+console.log(instructor)
