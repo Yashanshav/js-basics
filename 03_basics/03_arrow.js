@@ -14,10 +14,10 @@ const user = {
 // user.welcomeMessage()
 
 //IMP INTERVIEW QUESTION
-// console.log(this) // return {} (in node env, no global object is there, but if you run this in chrome, you will get window)
+// console.log(this) // return {} (in node env, Global Execution Context is empty, but if you run this in chrome, you will get window as Global Execution Context)
 
 // function chai() {
-//    console.log(this) // now this will return object reference of node
+//    console.log(this) // now this will return something in node as Global Execution Context is not empty
 //    const username = "yash"
 //    console.log(this.username) // undefined
 // }
