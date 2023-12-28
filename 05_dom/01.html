@@ -1,13 +1,46 @@
-<!DOCTYPE html> //this is to specify document type which is HTML in this case
+<!-- this is to specify document type which is HTML in this case -->
+<!DOCTYPE html> 
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>DOM learning</title>
+    <style>
+        .bg-black{
+            background-color: #212121;
+            color: #fff;
+        }
+    </style>
 </head>
-<body>
-    <div class = "bg-black">
-        <h1 class = "heading"> DOM learning on chai aur code </h1>
+<body class = "bg-black">
+    <div >
+        <h1 id="title" class = "heading"> DOM learning on chai aur code 
+            <span style="display: none;"> test text</span>
+        </h1>
+        <h2>Lorem ipsum dolor sit.</h2>
+        <h2>Lorem ipsum dolor sit.</h2>
+        <h2>Lorem ipsum dolor sit.</h2>
         <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit</p>
+        <input type="password" name="" id="">
+        <ul>
+            <li class="list-item">one</li>
+            <li class="list-item">two</li>
+            <li class="list-item">three</li>
+            <li class="list-item">four</li>
+        </ul>
     </div>
 </body>
 </html>
+
+<!--
+    Difference between innerHTML, innerContent, innerText?
+    innerText -> reads text as it is renders on screen.
+    innerContent -> reads text as it is markup, returns all the text whether it is rendered on screen or not, only deals with raw text and doesn't account for styles
+    innerHTML -> it displays all the HTML tags also
+-->
+
+<!--
+    How Node List and HTML Collection is different from arrays?
+    Node List doesn't have forEach but not map functionality
+    HTML Collection doesn't have forEach also
+    But they can be converted to arrays, if we want to perform any array like operation on the dom selectors
+-->
